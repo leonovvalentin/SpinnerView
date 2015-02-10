@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpinnerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqA-4C-mDO">
+                                <rect key="frame" x="150" y="562" width="301" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vou-8r-w1g">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Resize">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnResizeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dtJ-dz-Unc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JM-3R-7ld">
+                                        <rect key="frame" x="76" y="0.0" width="83" height="30"/>
+                                        <state key="normal" title="Add spinner">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QV-89-rHB">
+                                        <rect key="frame" x="189" y="0.0" width="112" height="30"/>
+                                        <state key="normal" title="Remove spinner">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="0JM-3R-7ld" firstAttribute="top" secondItem="DqA-4C-mDO" secondAttribute="top" id="1Nf-O3-Y7M"/>
+                                    <constraint firstItem="Vou-8r-w1g" firstAttribute="top" secondItem="DqA-4C-mDO" secondAttribute="top" id="5qm-7u-rSa"/>
+                                    <constraint firstAttribute="bottom" secondItem="9QV-89-rHB" secondAttribute="bottom" id="B3f-ZC-Usb"/>
+                                    <constraint firstItem="9QV-89-rHB" firstAttribute="top" secondItem="DqA-4C-mDO" secondAttribute="top" id="Pe6-lQ-XKH"/>
+                                    <constraint firstAttribute="bottom" secondItem="0JM-3R-7ld" secondAttribute="bottom" id="Z0y-Nb-bma"/>
+                                    <constraint firstItem="0JM-3R-7ld" firstAttribute="leading" secondItem="Vou-8r-w1g" secondAttribute="trailing" constant="30" id="ihP-Go-2aY"/>
+                                    <constraint firstItem="9QV-89-rHB" firstAttribute="leading" secondItem="0JM-3R-7ld" secondAttribute="trailing" constant="30" id="kNZ-sO-WtR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vou-8r-w1g" secondAttribute="bottom" id="l2Q-jG-p0l"/>
+                                    <constraint firstItem="Vou-8r-w1g" firstAttribute="leading" secondItem="DqA-4C-mDO" secondAttribute="leading" id="mHi-Bx-Fe7"/>
+                                    <constraint firstAttribute="trailing" secondItem="9QV-89-rHB" secondAttribute="trailing" id="n21-Yh-PgS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZV-kE-ZBZ">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1R9-cv-vEo"/>
+                                    <constraint firstAttribute="width" constant="200" id="ebU-Dy-sUX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="BZV-kE-ZBZ" secondAttribute="centerX" id="0GF-EE-Yo8"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BZV-kE-ZBZ" secondAttribute="trailing" constant="50" id="FE2-c8-jZz"/>
+                            <constraint firstAttribute="centerX" secondItem="DqA-4C-mDO" secondAttribute="centerX" id="Keq-ot-Md2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="BZV-kE-ZBZ" secondAttribute="bottom" constant="50" id="Ock-pJ-k2y"/>
+                            <constraint firstAttribute="centerY" secondItem="BZV-kE-ZBZ" secondAttribute="centerY" id="fKa-ID-cNn"/>
+                            <constraint firstItem="BZV-kE-ZBZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="kiI-Ly-UJg"/>
+                            <constraint firstItem="BZV-kE-ZBZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="zMM-5I-3LD"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="DqA-4C-mDO" secondAttribute="bottom" constant="8" id="zuN-Sk-mln"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="vExperimental" destination="BZV-kE-ZBZ" id="Tsj-go-aUq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
