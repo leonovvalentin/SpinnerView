@@ -13,6 +13,7 @@
 		EA6238901A89FD45006A10DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA62388F1A89FD45006A10DE /* Images.xcassets */; };
 		EA6238931A89FD45006A10DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6238911A89FD45006A10DE /* LaunchScreen.xib */; };
 		EA62389F1A89FD45006A10DE /* SpinnerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA62389E1A89FD45006A10DE /* SpinnerViewTests.swift */; };
+		EA6238A91A8A0835006A10DE /* UIView+Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6238A81A8A0835006A10DE /* UIView+Spinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		EA6238981A89FD45006A10DE /* SpinnerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinnerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA62389D1A89FD45006A10DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA62389E1A89FD45006A10DE /* SpinnerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewTests.swift; sourceTree = "<group>"; };
+		EA6238A81A8A0835006A10DE /* UIView+Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Spinner.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				EA62388F1A89FD45006A10DE /* Images.xcassets */,
 				EA6238911A89FD45006A10DE /* LaunchScreen.xib */,
 				EA6238861A89FD45006A10DE /* Supporting Files */,
+				EA6238A81A8A0835006A10DE /* UIView+Spinner.swift */,
 			);
 			path = SpinnerView;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6238A91A8A0835006A10DE /* UIView+Spinner.swift in Sources */,
 				EA62388B1A89FD45006A10DE /* ViewController.swift in Sources */,
 				EA6238891A89FD45006A10DE /* AppDelegate.swift in Sources */,
 			);
@@ -407,6 +411,7 @@
 				EA6238A41A89FD45006A10DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA6238A51A89FD45006A10DE /* Build configuration list for PBXNativeTarget "SpinnerViewTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				EA6238A71A89FD45006A10DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

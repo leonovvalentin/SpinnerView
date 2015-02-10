@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqA-4C-mDO">
-                                <rect key="frame" x="150" y="562" width="301" height="30"/>
+                                <rect key="frame" x="159" y="562" width="282" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vou-8r-w1g">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
@@ -30,14 +30,17 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JM-3R-7ld">
-                                        <rect key="frame" x="76" y="0.0" width="83" height="30"/>
-                                        <state key="normal" title="Add spinner">
+                                        <rect key="frame" x="76" y="0.0" width="88" height="30"/>
+                                        <state key="normal" title="Start spinner">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnStartSpinnerClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qLv-d9-SG8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QV-89-rHB">
-                                        <rect key="frame" x="189" y="0.0" width="112" height="30"/>
-                                        <state key="normal" title="Remove spinner">
+                                        <rect key="frame" x="194" y="0.0" width="88" height="30"/>
+                                        <state key="normal" title="Stop spinner">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -60,24 +63,26 @@
                                 <rect key="frame" x="200" y="200" width="200" height="200"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="1R9-cv-vEo"/>
-                                    <constraint firstAttribute="width" constant="200" id="ebU-Dy-sUX"/>
+                                    <constraint firstAttribute="height" priority="750" constant="200" id="idk-nK-JrN"/>
+                                    <constraint firstAttribute="width" priority="750" constant="200" id="wjG-Oj-1zp"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="BZV-kE-ZBZ" secondAttribute="centerX" id="0GF-EE-Yo8"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BZV-kE-ZBZ" secondAttribute="trailing" constant="50" id="FE2-c8-jZz"/>
+                            <constraint firstItem="BZV-kE-ZBZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Baa-Rt-3Vc"/>
                             <constraint firstAttribute="centerX" secondItem="DqA-4C-mDO" secondAttribute="centerX" id="Keq-ot-Md2"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="BZV-kE-ZBZ" secondAttribute="bottom" constant="50" id="Ock-pJ-k2y"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BZV-kE-ZBZ" secondAttribute="bottom" constant="50" id="PXZ-1n-B6R"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="BZV-kE-ZBZ" secondAttribute="trailing" constant="50" id="ZXR-f9-KRv"/>
+                            <constraint firstItem="BZV-kE-ZBZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="csU-wn-Bpy"/>
                             <constraint firstAttribute="centerY" secondItem="BZV-kE-ZBZ" secondAttribute="centerY" id="fKa-ID-cNn"/>
-                            <constraint firstItem="BZV-kE-ZBZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="kiI-Ly-UJg"/>
-                            <constraint firstItem="BZV-kE-ZBZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="zMM-5I-3LD"/>
                             <constraint firstAttribute="bottomMargin" secondItem="DqA-4C-mDO" secondAttribute="bottom" constant="8" id="zuN-Sk-mln"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lcHeight" destination="idk-nK-JrN" id="Poz-SO-OtW"/>
+                        <outlet property="lcWidth" destination="wjG-Oj-1zp" id="IIa-Ip-0JI"/>
                         <outlet property="vExperimental" destination="BZV-kE-ZBZ" id="Tsj-go-aUq"/>
                     </connections>
                 </viewController>
