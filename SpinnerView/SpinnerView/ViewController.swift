@@ -23,4 +23,8 @@ class ViewController: UIViewController {
     @IBAction func btnStartSpinnerClicked(sender: UIButton) {
         self.vExperimental.startSpinner()
     }
+    
+    @IBAction func btnStopSpinnerClicked(sender: UIButton) {
+        self.vExperimental.stopSpinner()
+    }
 }
